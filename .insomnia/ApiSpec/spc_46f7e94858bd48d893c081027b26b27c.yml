@@ -1,8 +1,32 @@
 _id: spc_46f7e94858bd48d893c081027b26b27c
 type: ApiSpec
 parentId: wrk_576d6b5d8de841378d1e2b7ef7307d1f
-modified: 1619706899765
+modified: 1619707158775
 created: 1619706899765
 fileName: AWS
-contents: ""
+contents: |
+  openapi: 3.0.2
+  info:
+    version: '1.0'
+    title: httpbin-simplest
+    license:
+      name: Apache 2.0
+    description: 'The simplest HTTP Request & Response Service.'
+    contact:
+      name: Kong
+  servers:
+    - url: 'http://httpbin.org'
+      description: kongenterprise
+  paths:
+    '/get':
+      get:
+        summary: Get HTTPbin
+        tags:
+          - get
+        responses:
+          '200':
+            description: The request's query parameters.
+            content:
+              application/json
+        description: "HTTPbin request"
 contentType: yaml
