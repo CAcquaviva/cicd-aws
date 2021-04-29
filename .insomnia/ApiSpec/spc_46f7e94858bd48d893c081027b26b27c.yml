@@ -1,7 +1,7 @@
 _id: spc_46f7e94858bd48d893c081027b26b27c
 type: ApiSpec
 parentId: wrk_576d6b5d8de841378d1e2b7ef7307d1f
-modified: 1619707500975
+modified: 1619709382356
 created: 1619706899765
 fileName: AWS
 contents: |
@@ -16,7 +16,7 @@ contents: |
       name: Kong
   servers:
     - url: 'http://httpbin.org'
-      description: kongenterpriseaaa
+      description: kongenterprise
   paths:
     '/get':
       get:
