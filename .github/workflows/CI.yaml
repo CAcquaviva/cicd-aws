@@ -21,7 +21,7 @@ jobs:
         rm apitmp.yaml
         inso generate config httpbin2.yaml --output kong.yaml
         deck --kong-addr http://18.196.253.92:8001 sync --workspace devops
-        cp httpbin2.yaml ./kong-portal-templates/workspaces/default/specs
+        cp httpbin2.yaml ./kong-portal-templates/workspaces/devops/specs
         cd ./kong-portal-templates
         KONG_ADMIN_URL=http://18.196.253.92:8001 portal deploy devops
 
